@@ -1,3 +1,3 @@
 # Dockerfiles
 
-gitolite: Dockerfile for installing gitolite server behind a proxy, allowing ssh\_key injection for maintenance.
+gitolite: gitolite behind proxy; allow ssh\_key injection for maintenance.
