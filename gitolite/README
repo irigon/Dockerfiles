@@ -1,0 +1,6 @@
+
+# Create the image with a tag called dockergit:
+ docker build -t dockergit .
+
+# In oder to run, place your pubkey in the directory admin_pubkey with name adm.pub
+docker run -d -p 3000:22 --name gitolite -v ~/docker_dir/docker_gitolite/admin_pubkey/adm.pub:/root/.ssh/authorized_keys dockergit
