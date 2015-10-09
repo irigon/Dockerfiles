@@ -21,6 +21,7 @@ RUN git config --global core.editor vim
 # 	without break gitolite.
 RUN mkdir /var/run/sshd
 RUN mkdir /root/.ssh
+ADD admin_pubkey/adm.pub /root/.ssh/authorized_keys
 
 # Add local user
 RUN adduser --system --group --shell /bin/bash git
